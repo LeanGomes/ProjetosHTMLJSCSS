@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Layout Responsivo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="logo-container">
+        <img src="vermelho.png" alt="Logo">
+    </section>
+
+    <section class="form-sections">
+        <div class="form-section">
+            <h1>Login</h1>
+    <form id="loginForm">
+        <p>Usuário:</p>
+        <input type="text" id="nome">
+        <p>Senha:</p>
+        <input type="password" id="senha">
+        <br>
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Cancelar">
+    </form>
+        </div>
+        <div class="form-section">
+            <h1>Cadastrar</h1>
+
+    <form id="formCadastro">
+        <p>Usuario:</p>
+        <input type="text" id="nomeCadastro">
+        <p>Email:</p>
+        <input type="email" id="emailCadastro">
+        <p>Confirmar Email:</p>
+        <input type="email" id="emailConf">
+        <p>Senha:</p>
+        <input type="password" id="senhaCadastro">
+        <br>
+        <input type="submit" value="Entrar">
+        <input type="reset" value="Cancelar">
+    </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

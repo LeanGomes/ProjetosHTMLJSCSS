@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        #modalDialog::backdrop{
+            background-color: rgb(73, 69, 62);
+        }
+    </style>
+</head>
+<body>
+    <h1>Modal com HTML</h1>
+    <button id="openModal">Abrir Modal Formulário</button>
+
+    <!--Tag Dialog = Modal-->
+
+    <dialog id="modalDialog">
+        <h2>Formulário Modal</h2>
+        <form id="modalForm">
+            <label for="email">Insira Email</label>
+            <input type="email" placeholder="E-mail"/>
+            
+            <button type="button" id="closeModal">Fechar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </dialog>
+
+    <script>
+        const dialog = document.querySelector("#modalDialog");
+        const openModal = document.querySelector("#openModal");
+        const closeModal = document.querySelector("#closeModal")
+        
+        openModal.addEventListener("click", (e) => {
+            dialog.showModal();
+        });
+        closeModal.addEventListener("click", (e) => {
+            dialog.close();
+        });
+
+        const modalForm = document.querySelector("#modalForm");
+
+        modalForm.addEventListener("click", (e) =>{
+            e.preventDefault();
+            console.log("Enviando dados de formulário...")
+        });
+
+        dialog.addEventListener("click", (event) => {
+            const rec = dialog.getBoundingClientRect();
+
+            if( 
+                
+                event.clientX < rect.left||
+                event.clientX < rect.top||
+                event.clientY < rect.right||
+                event.clientY < rect.bottom
+            
+                
+        ){
+            dialog.close();
+        }
+        });
+    
+    
+    </script>
+</body>
+</html>

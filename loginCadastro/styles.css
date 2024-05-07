@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+header{
+    background-color: crimson;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    
+    
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-sections {
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Distribui as seções igualmente */
+    margin: 20px ;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc; 
+    padding: 30px;
+    
+    
+    
+}
+
+.form-section {
+    width: calc(50% - 20px); /* 50% do width do main com um espaço de 20px entre as seções */
+    box-sizing: border-box; /* Considera a largura do padding e da borda no cálculo da largura */
+    ;
+}
+
+
+footer {
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media Query para telas menores */
+@media screen and (max-width: 768px) {
+    .form-sections {
+        flex-direction: column; /* Altera a direção das seções para vertical em telas menores */
+    }
+    .form-section {
+        width: 100%; /* Define a largura total para as seções */
+        margin-bottom: 20px; /* Adiciona um espaçamento entre as seções */
+    }
+}
+
+
+
